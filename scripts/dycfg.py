@@ -3,6 +3,8 @@ import gradio as gr
 from modules.processing import StableDiffusionProcessing
 from modules import scripts
 from modules.sd_samplers_cfg_denoiser import CFGDenoiser
+from scripts.dycfg_xyz import init_xyz
+
 
 NAME = "DyCFG"
 
@@ -189,3 +191,5 @@ class Script(scripts.Script):
         original, _ = self.unhook(denoiser_cls)
         setattr(denoiser_cls, SAVED, original)
         setattr(denoiser_cls, ORIGINAL, fn)
+
+init_xyz(NAME, Script)
