@@ -119,10 +119,10 @@ def create_options(ext_name: str, script: type, AxisOptionClass: type, axis_opti
         
         for i in range(3):
             options.extend([
-                define(f'#{i} Start step', i*4+0, int),
-                define(f'#{i} End step', i*4+1, int),
-                define(f'#{i} CFG scale', i*4+2, float),
-                define(f'#{i} Interpolation', i*4+3, str, choices=['Default', 'Linear', 'Fixed']),
+                define(f'#{i} Start step', 1+i*4+0, int),
+                define(f'#{i} End step', 1+i*4+1, int),
+                define(f'#{i} CFG scale', 1+i*4+2, float),
+                define(f'#{i} Interpolation', 1+i*4+3, str, choices=['Default', 'Linear', 'Fixed']),
             ])
         
         for opt in options:
