@@ -27,6 +27,8 @@ CFG scale: the scale value which will be used in Start..End steps.
 Interpolation: the CFG scale interpolation mode (described below).
 ```
 
+If both of `Start` and `End` are set to 0, the row will be ignored.
+
 ### Interpolation modes
 
 Specify CFG scale interpolation mode for `End+1`..`Start-1` steps.
