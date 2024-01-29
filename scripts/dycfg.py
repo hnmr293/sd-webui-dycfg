@@ -119,10 +119,11 @@ class Script(scripts.Script):
 
         # scales = [ Default 7 7 7 Default 9 9 9 9 Fixed Fixed 4 4 Linear Linear Linear 3 3 3 Linear Linear Linear Default ]
         # while any(isinstance(x, str) for x in scales):
-        prev = p.cfg_scale
+        default = float(p.cfg_scale)
+        prev = default
         for i in range(len(scales)):
             if scales[i] == "Default":
-                scales[i] = p.cfg_scale
+                scales[i] = default
                 # scales = [ * 7 7 7 * 9 9 9 9 Fixed Fixed 4 4 Linear Linear Linear 3 3 3 Linear Linear Linear * ]
             elif scales[i] == "Fixed":
                 assert not isinstance(prev, str), f"prev = {prev}"
