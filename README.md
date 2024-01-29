@@ -1,8 +1,8 @@
 # DyCFG - Dynamic CFG Scale
 
-![cover 01](./images/7th_cfg_8_to_2.mp4)
+![cover 01](https://github.com/hnmr293/sd-webui-dycfg/assets/120772120/3dd60565-5fcc-4a65-b345-ecd9d71da820)
 
-![cover 02](./images/cfg_8_to_2.mp4)
+![cover 02](https://github.com/hnmr293/sd-webui-dycfg/assets/120772120/eb8505ab-f75e-4c6c-b346-7120d106ec98)
 
 ## What is this?
 
